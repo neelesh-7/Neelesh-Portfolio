@@ -1,3 +1,5 @@
+# Old netlify.app links (Spline island, past applications) move to the custom domain
+https://neeleshsirdana.netlify.app/*  https://neeleshsirdana.com/:splat  301!
 # Netlify redirects (Netlify reads this file and does not publish it)
 # The old resume link now opens the current PDF resume
 /NeeleshSirdanaResume.docx  /Neelesh_Sirdana_Resume.pdf  301!
