@@ -1,0 +1,6 @@
+# Netlify redirects (Netlify reads this file and does not publish it)
+# The old resume link now opens the current PDF resume
+/NeeleshSirdanaResume.docx  /Neelesh_Sirdana_Resume.pdf  301!
+# Blank page left over from an earlier upload
+/ibtportfolio       /projects.html#personal-and-school  301!
+/ibtportfolio.html  /projects.html#personal-and-school  301!

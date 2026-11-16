@@ -3,10 +3,26 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Neelesh's Portfolio</title>
+    <title>Projects | Neelesh Sirdana</title>
+    <meta name="description" content="Products, client work and personal projects by Neelesh Sirdana: SaaS, mobile apps, e-commerce and 3D web built with React, Next.js, TypeScript and more.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <link rel="canonical" href="https://neeleshsirdana.netlify.app/projects">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Neelesh Sirdana">
+    <meta property="og:title" content="Projects | Neelesh Sirdana">
+    <meta property="og:description" content="Products, client work and personal projects by Neelesh Sirdana: SaaS, mobile apps, e-commerce and 3D web built with React, Next.js, TypeScript and more.">
+    <meta property="og:url" content="https://neeleshsirdana.netlify.app/projects">
+    <meta property="og:image" content="https://neeleshsirdana.netlify.app/images/og/projects.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Neelesh Sirdana&#x27;s projects">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Projects | Neelesh Sirdana">
+    <meta name="twitter:description" content="Products, client work and personal projects by Neelesh Sirdana: SaaS, mobile apps, e-commerce and 3D web built with React, Next.js, TypeScript and more.">
+    <meta name="twitter:image" content="https://neeleshsirdana.netlify.app/images/og/projects.jpg">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/updates.css">
     <link href="/images/neelesh2transparent.png" rel="icon">
     <script type="text/javascript">
         !function (o, c) {
@@ -15,9 +31,16 @@
             n.className += t + "js",
                 ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
         }(window, document);
+        // The 3D home page opens these pages inside its frame on iPhone and iPad; show them full screen instead.
+        (function () {
+            try {
+                if (window.top !== window.self && window.top.location.origin === window.location.origin) {
+                    window.top.location.replace(window.location.href);
+                }
+            } catch (err) { }
+        })();
     </script>
 </head>
-
 <body>
     <div class="page-wrapper">
         <div id="top" data-animation="default" data-collapse="medium" data-duration="0" data-easing="ease"
@@ -28,43 +51,44 @@
                         <div class="w-layout-grid nav-menu-grid">
                             <div id="w-node-_81d24850-81ed-1eea-ee17-684d7b7aa449-7b7aa444" class="brand-wrap">
                                 <a href="/" data-w-id="81d24850-81ed-1eea-ee17-684d7b7aa44a"
-                                    class="brand-link w-inline-block">
+                                    class="brand-link w-inline-block" aria-label="Neelesh Sirdana, home">
                                     <div class="logo-wrap">
-                                        <img src="/images/Neelesh Sirdana.png" loading="lazy" class="logo" />
-                                        <img src="/images/Neelesh Sirdana.png" loading="lazy" class="alternate-logo" />
+                                        <img src="/images/Neelesh Sirdana.png" loading="lazy" class="logo" alt="Neelesh Sirdana" />
+                                        <img src="/images/Neelesh Sirdana.png" loading="lazy" class="alternate-logo" alt="" aria-hidden="true" />
                                     </div>
                                 </a>
                             </div>
                             <nav role="navigation" id="w-node-_81d24850-81ed-1eea-ee17-684d7b7aa44e-7b7aa444"
-                                class="navigation w-nav-menu">
+                                class="navigation w-nav-menu" aria-label="Main">
                                 <div class="navigation-content">
                                     <div class="nav-content-block">
-                                        <a data-w-id="81d24850-81ed-1eea-ee17-684d7b7aa451" href="/" aria-current="page"
-                                            class="nav-link w-inline-block w--current">
+                                        <a data-w-id="81d24850-81ed-1eea-ee17-684d7b7aa451" href="/"
+                                            class="nav-link w-inline-block">
                                             <div class="nav-text">Home</div>
-                                            <div class="nav-text is-hover">Home</div>
+                                            <div class="nav-text is-hover" aria-hidden="true">Home</div>
                                         </a>
-                                        <a data-w-id="81d24850-81ed-1eea-ee17-684d7b7aa456" href="about.html"
+                                        <a data-w-id="81d24850-81ed-1eea-ee17-684d7b7aa456" href="/about.html"
                                             class="nav-link w-inline-block">
                                             <div class="nav-text">About</div>
-                                            <div class="nav-text is-hover">About</div>
+                                            <div class="nav-text is-hover" aria-hidden="true">About</div>
                                         </a>
                                         <div class="nav-item"></div>
-                                        <a data-w-id="81d24850-81ed-1eea-ee17-684d7b7aa45c" href="projects.html"
-                                            class="nav-link w-inline-block">
+                                        <a data-w-id="81d24850-81ed-1eea-ee17-684d7b7aa45c" href="/projects.html" aria-current="page"
+                                            class="nav-link w-inline-block w--current">
                                             <div class="nav-text">Projects</div>
-                                            <div class="nav-text is-hover">Projects</div>
+                                            <div class="nav-text is-hover" aria-hidden="true">Projects</div>
                                         </a>
-                                        <a data-w-id="81d24850-81ed-1eea-ee17-684d7b7aa461" href="contact.html"
+                                        <a data-w-id="81d24850-81ed-1eea-ee17-684d7b7aa461" href="/contact.html"
                                             class="nav-link w-inline-block">
                                             <div class="nav-text">Contact</div>
-                                            <div class="nav-text is-hover">Contact</div>
+                                            <div class="nav-text is-hover" aria-hidden="true">Contact</div>
                                         </a>
                                     </div>
                                 </div>
                             </nav>
                             <div id="w-node-_81d24850-81ed-1eea-ee17-684d7b7aa466-7b7aa444"
-                                data-w-id="81d24850-81ed-1eea-ee17-684d7b7aa466" class="menu-button w-nav-button">
+                                data-w-id="81d24850-81ed-1eea-ee17-684d7b7aa466" class="menu-button w-nav-button"
+                                aria-label="Menu">
                                 <div class="menu-button-block">
                                     <div class="menu-button-wrap">
                                         <div class="menu-line-item">
@@ -102,353 +126,1226 @@
                     <div class="container-medium">
                         <div class="padding-top padding-xhuge">
                             <div class="project-component">
-                                <div data-w-id="785628a1-e0ca-bc88-ad87-3a11323bff9f" class="project-container">
-                                    <div class="w-dyn-list">
-                                        <div role="list" class="w-dyn-items">
-                                            <div role="listitem" class="w-dyn-item">
-                                                <a data-w-id="785628a1-e0ca-bc88-ad87-3a11323bffa3"
-                                                    href="/AirplaneBoardingSystem.html"
-                                                    class="project-link-wrapper w-inline-block">
-                                                    <div class="project-content-wrap">
-                                                        <img src="/images/AirplaneMenu.png"
-                                                            loading="lazy" sizes="100vw"
-                                                            class="project-image" />
-                                                    </div>
-                                                    <div class="project-thumbnail-wrap">
-                                                        <img src="/images/AirplaneSeatMap.png"
-                                                            loading="lazy" sizes="100vw"
-                                                            class="project-thumbnail" />
-                                                    </div>
-                                                    <div class="project-content">
-                                                        <div class="w-layout-grid project-inner-grid">
-                                                            <div id="w-node-_785628a1-e0ca-bc88-ad87-3a11323bffaa-323bff9e"
-                                                                class="project-content-item">
-                                                                <h2 class="project-name">Airplane Boarding System</h2>
-                                                            </div>
-                                                            <div id="w-node-_785628a1-e0ca-bc88-ad87-3a11323bffac-323bff9e"
-                                                                class="project-content-item">
-                                                                <h2 class="project-info-text">2025</h2>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="project-name-block">
-                                                        <div class="project-name-wrapper">
-                                                            <div class="project-name-link">
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                            </div>
-                                                            <div class="project-name-link">
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
+                            <section class="project-group" id="products" aria-labelledby="products-title">
+                                <div class="project-group-header">
+                                    <h2 class="project-group-title" id="products-title">Products</h2>
+                                    <p class="project-group-note">Software products and platforms I built.</p>
                                 </div>
+                                <div class="project-cards">
                                 <div data-w-id="785628a1-e0ca-bc88-ad87-3a11323bff9f" class="project-container">
-                                    <div class="w-dyn-list">
-                                        <div role="list" class="w-dyn-items">
-                                            <div role="listitem" class="w-dyn-item">
-                                                <a data-w-id="785628a1-e0ca-bc88-ad87-3a11323bffa3"
-                                                    href="CourseFinder.html"
-                                                    class="project-link-wrapper w-inline-block">
-                                                    <div class="project-content-wrap">
-                                                        <img src="/images/coursefinderhomepage.png"
-                                                            loading="lazy" sizes="100vw"
-                                                            class="project-image" />
-                                                    </div>
-                                                    <div class="project-thumbnail-wrap">
-                                                        <img src="/images/coursefinderhomepage.png"
-                                                            loading="lazy" sizes="100vw"
-                                                            class="project-thumbnail" />
-                                                    </div>
-                                                    <div class="project-content">
-                                                        <div class="w-layout-grid project-inner-grid">
-                                                            <div id="w-node-_785628a1-e0ca-bc88-ad87-3a11323bffaa-323bff9e"
-                                                                class="project-content-item">
-                                                                <h2 class="project-name">University Course Finder</h2>
-                                                            </div>
-                                                            <div id="w-node-_785628a1-e0ca-bc88-ad87-3a11323bffac-323bff9e"
-                                                                class="project-content-item">
-                                                                <h2 class="project-info-text">2025</h2>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="project-name-block">
-                                                        <div class="project-name-wrapper">
-                                                            <div class="project-name-link">
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                            </div>
-                                                            <div class="project-name-link">
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
+                                    <a data-w-id="785628a1-e0ca-bc88-ad87-3a11323bffa3" href="/MaxProFuel.html"
+                                        class="project-link-wrapper w-inline-block"
+                                        aria-label="MaxPro Fuel, 2026">
+                                        <div class="project-content-wrap">
+                                            <img src="/images/projects/maxpro-fuel/feature-graphic.webp" loading="lazy" sizes="(max-width: 767px) 100vw, 50vw"
+                                                class="project-image" alt="MaxPro Fuel banner: truck routes on your fuel network" />
+                                        </div>
+                                        <div class="project-thumbnail-wrap">
+                                            <img src="/images/projects/maxpro-fuel/route-phone.webp" loading="lazy" sizes="10rem"
+                                                class="project-thumbnail" alt="" aria-hidden="true" />
+                                        </div>
+                                        <div class="project-content">
+                                            <div class="w-layout-grid project-inner-grid">
+                                                <div class="project-content-item">
+                                                    <h3 class="project-name">MaxPro Fuel</h3>
+                                                </div>
+                                                <div class="project-content-item">
+                                                    <div class="project-info-text">2026</div>
+                                                </div>
                                             </div>
                                         </div>
+                                        <div class="project-name-block" aria-hidden="true">
+                                            <div class="project-name-wrapper">
+                                                <div class="project-name-link">
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                </div>
+                                                <div class="project-name-link">
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="project-card-caption">
+                                        <p class="project-summary">A truck-navigation app that plans truck-legal routes and picks the cheapest in-network fuel stops.</p>
+                                        <ul class="tag-list"><li class="tag">React Native</li><li class="tag">Expo</li><li class="tag">Node.js</li><li class="tag">PostgreSQL</li><li class="tag">HERE API</li></ul>
                                     </div>
                                 </div>
                                 <div data-w-id="785628a1-e0ca-bc88-ad87-3a11323bff9f" class="project-container">
-                                    <div class="w-dyn-list">
-                                        <div role="list" class="w-dyn-items">
-                                            <div role="listitem" class="w-dyn-item">
-                                                <a data-w-id="785628a1-e0ca-bc88-ad87-3a11323bffa3"
-                                                    href="WellnessLamp.html"
-                                                    class="project-link-wrapper w-inline-block">
-                                                    <div class="project-content-wrap">
-                                                        <img src="/images/Wellness Lamp.png"
-                                                            loading="lazy" sizes="100vw"
-                                                            class="project-image" />
-                                                    </div>
-                                                    <div class="project-thumbnail-wrap">
-                                                        <img src="/images/Wellness Lamp Model.png"
-                                                            loading="lazy" sizes="100vw"
-                                                            class="project-thumbnail" />
-                                                    </div>
-                                                    <div class="project-content">
-                                                        <div class="w-layout-grid project-inner-grid">
-                                                            <div id="w-node-_785628a1-e0ca-bc88-ad87-3a11323bffaa-323bff9e"
-                                                                class="project-content-item">
-                                                                <h2 class="project-name">Wellness Lamp</h2>
-                                                            </div>
-                                                            <div id="w-node-_785628a1-e0ca-bc88-ad87-3a11323bffac-323bff9e"
-                                                                class="project-content-item">
-                                                                <h2 class="project-info-text">2024</h2>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="project-name-block">
-                                                        <div class="project-name-wrapper">
-                                                            <div class="project-name-link">
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                            </div>
-                                                            <div class="project-name-link">
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
+                                    <a data-w-id="785628a1-e0ca-bc88-ad87-3a11323bffa3" href="/MaxProOnboarding.html"
+                                        class="project-link-wrapper w-inline-block"
+                                        aria-label="MaxPro Onboarding Platform, 2026">
+                                        <div class="project-content-wrap">
+                                            <img src="/images/projects/maxpro-onboarding/landing-desktop.webp" loading="lazy" sizes="(max-width: 767px) 100vw, 50vw"
+                                                class="project-image" alt="MaxPro onboarding landing page on desktop" />
+                                        </div>
+                                        <div class="project-thumbnail-wrap">
+                                            <img src="/images/projects/maxpro-onboarding/landing-mobile.webp" loading="lazy" sizes="10rem"
+                                                class="project-thumbnail" alt="" aria-hidden="true" />
+                                        </div>
+                                        <div class="project-content">
+                                            <div class="w-layout-grid project-inner-grid">
+                                                <div class="project-content-item">
+                                                    <h3 class="project-name">MaxPro Onboarding Platform</h3>
+                                                </div>
+                                                <div class="project-content-item">
+                                                    <div class="project-info-text">2026</div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div data-w-id="785628a1-e0ca-bc88-ad87-3a11323bffd8" class="project-container">
-                                    <div class="w-dyn-list">
-                                        <div role="list" class="w-dyn-items">
-                                            <div role="listitem" class="w-dyn-item">
-                                                <a data-w-id="785628a1-e0ca-bc88-ad87-3a11323bffdc"
-                                                    href="PostureDetection.html" class="project-link-wrapper w-inline-block">
-                                                    <div class="project-content-wrap">
-                                                        <img src="/images/parth testing.png"
-                                                            loading="lazy" sizes="100vw"
-                                                            class="project-image" />
-                                                    </div>
-                                                    <div class="project-thumbnail-wrap">
-                                                        <img src="/images/parth testing.png"
-                                                            loading="lazy" sizes="100vw"
-                                                            class="project-thumbnail" />
-                                                    </div>
-                                                    <div class="project-content">
-                                                        <div class="w-layout-grid project-inner-grid">
-                                                            <div id="w-node-_785628a1-e0ca-bc88-ad87-3a11323bffe3-323bff9e"
-                                                                class="project-content-item">
-                                                                <h2 class="project-name">Posture Detection</h2>
-                                                            </div>
-                                                            <div id="w-node-_785628a1-e0ca-bc88-ad87-3a11323bffe5-323bff9e"
-                                                                class="project-content-item">
-                                                                <h2 class="project-info-text">2024</h2>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="project-name-block">
-                                                        <div class="project-name-wrapper">
-                                                            <div class="project-name-link">
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                            </div>
-                                                            <div class="project-name-link">
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
+                                        <div class="project-name-block" aria-hidden="true">
+                                            <div class="project-name-wrapper">
+                                                <div class="project-name-link">
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                </div>
+                                                <div class="project-name-link">
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                </div>
                                             </div>
                                         </div>
+                                    </a>
+                                    <div class="project-card-caption">
+                                        <p class="project-summary">MaxPro&#x27;s client onboarding portal, live for customers running 2,000+ trucks.</p>
+                                        <ul class="tag-list"><li class="tag">Next.js</li><li class="tag">TypeScript</li><li class="tag">Prisma</li><li class="tag">DocuSign</li><li class="tag">Anthropic API</li></ul>
                                     </div>
                                 </div>
-                                <div data-w-id="785628a1-e0ca-bc88-ad87-3a11323c004a" class="project-container">
-                                    <div class="w-dyn-list">
-                                        <div role="list" class="w-dyn-items">
-                                            <div role="listitem" class="w-dyn-item">
-                                                <a data-w-id="785628a1-e0ca-bc88-ad87-3a11323c004e"
-                                                    href="KnowYourClass.html"
-                                                    class="project-link-wrapper w-inline-block">
-                                                    <div class="project-content-wrap">
-                                                        <img src="/images/students.webp"
-                                                            loading="lazy" sizes="100vw"
-                                                            class="project-image" />
-                                                    </div>
-                                                    <div class="project-thumbnail-wrap">
-                                                        <img src="/images/HacktoTomorrow.jpg"
-                                                            loading="lazy" sizes="100vw"
-                                                            class="project-thumbnail" />
-                                                    </div>
-                                                    <div class="project-content">
-                                                        <div class="w-layout-grid project-inner-grid">
-                                                            <div id="w-node-_785628a1-e0ca-bc88-ad87-3a11323c0055-323bff9e"
-                                                                class="project-content-item">
-                                                                <h2 class="project-name">Know Your Class</h2>
-                                                            </div>
-                                                            <div id="w-node-_785628a1-e0ca-bc88-ad87-3a11323c0057-323bff9e"
-                                                                class="project-content-item">
-                                                                <h2 class="project-info-text">2021</h2>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="project-name-block">
-                                                        <div class="project-name-wrapper">
-                                                            <div class="project-name-link">
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                            </div>
-                                                            <div class="project-name-link">
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
+                                <div data-w-id="785628a1-e0ca-bc88-ad87-3a11323bff9f" class="project-container">
+                                    <a data-w-id="785628a1-e0ca-bc88-ad87-3a11323bffa3" href="/CampusManager.html"
+                                        class="project-link-wrapper w-inline-block"
+                                        aria-label="Limen Campus Manager, 2026">
+                                        <div class="project-content-wrap">
+                                            <img src="/images/projects/campus-manager/feature-graphic.webp" loading="lazy" sizes="(max-width: 767px) 100vw, 50vw"
+                                                class="project-image" alt="Limen Campus Manager logo: students, scheduling, timesheets, batches" />
+                                        </div>
+                                        <div class="project-thumbnail-wrap">
+                                            <img src="/images/projects/campus-manager/students-phone.webp" loading="lazy" sizes="10rem"
+                                                class="project-thumbnail" alt="" aria-hidden="true" />
+                                        </div>
+                                        <div class="project-content">
+                                            <div class="w-layout-grid project-inner-grid">
+                                                <div class="project-content-item">
+                                                    <h3 class="project-name">Limen Campus Manager</h3>
+                                                </div>
+                                                <div class="project-content-item">
+                                                    <div class="project-info-text">2026</div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div data-w-id="785628a1-e0ca-bc88-ad87-3a11323c004a" class="project-container">
-                                    <div class="w-dyn-list">
-                                        <div role="list" class="w-dyn-items">
-                                            <div role="listitem" class="w-dyn-item">
-                                                <a data-w-id="785628a1-e0ca-bc88-ad87-3a11323c004e"
-                                                    href="ServerBlank.html"
-                                                    class="project-link-wrapper w-inline-block">
-                                                    <div class="project-content-wrap">
-                                                        <img src="/images/Discord background.jpg"
-                                                            loading="lazy" sizes="100vw"
-                                                            class="project-image" />
-                                                    </div>
-                                                    <div class="project-thumbnail-wrap">
-                                                        <img src="/images/Discord Bot.png"
-                                                            loading="lazy" sizes="100vw"
-                                                            class="project-thumbnail" />
-                                                    </div>
-                                                    <div class="project-content">
-                                                        <div class="w-layout-grid project-inner-grid">
-                                                            <div id="w-node-_785628a1-e0ca-bc88-ad87-3a11323c0055-323bff9e"
-                                                                class="project-content-item">
-                                                                <h2 class="project-name">Discord Bot - Server Blank</h2>
-                                                            </div>
-                                                            <div id="w-node-_785628a1-e0ca-bc88-ad87-3a11323c0057-323bff9e"
-                                                                class="project-content-item">
-                                                                <h2 class="project-info-text">2021</h2>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="project-name-block">
-                                                        <div class="project-name-wrapper">
-                                                            <div class="project-name-link">
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                            </div>
-                                                            <div class="project-name-link">
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                                <h2 class="view-text">View</h2>
-                                                                <h2 class="view-text">↗</h2>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
+                                        <div class="project-name-block" aria-hidden="true">
+                                            <div class="project-name-wrapper">
+                                                <div class="project-name-link">
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                </div>
+                                                <div class="project-name-link">
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                </div>
                                             </div>
                                         </div>
+                                    </a>
+                                    <div class="project-card-caption">
+                                        <p class="project-summary">A SaaS for truck-driving schools across Canada, on web, iOS, Android, Windows and macOS.</p>
+                                        <ul class="tag-list"><li class="tag">React</li><li class="tag">TypeScript</li><li class="tag">Firebase</li><li class="tag">Capacitor</li><li class="tag">Electron</li></ul>
                                     </div>
                                 </div>
+                                </div>
+                            </section>
+                            <section class="project-group" id="client-work" aria-labelledby="client-work-title">
+                                <div class="project-group-header">
+                                    <h2 class="project-group-title" id="client-work-title">Client Work</h2>
+                                    <p class="project-group-note">Sites and apps for clients, mostly through Limen Digital Studio.</p>
+                                </div>
+                                <div class="project-cards">
+                                <div data-w-id="785628a1-e0ca-bc88-ad87-3a11323bff9f" class="project-container">
+                                    <a data-w-id="785628a1-e0ca-bc88-ad87-3a11323bffa3" href="/NutriBox.html"
+                                        class="project-link-wrapper w-inline-block"
+                                        aria-label="NutriBox, 2026">
+                                        <div class="project-content-wrap">
+                                            <img src="/images/projects/nutribox/home-desktop.webp" loading="lazy" sizes="(max-width: 767px) 100vw, 50vw"
+                                                class="project-image" alt="NutriBox home page on desktop" />
+                                        </div>
+                                        <div class="project-thumbnail-wrap">
+                                            <img src="/images/projects/nutribox/home-mobile.webp" loading="lazy" sizes="10rem"
+                                                class="project-thumbnail" alt="" aria-hidden="true" />
+                                        </div>
+                                        <div class="project-content">
+                                            <div class="w-layout-grid project-inner-grid">
+                                                <div class="project-content-item">
+                                                    <h3 class="project-name">NutriBox</h3>
+                                                </div>
+                                                <div class="project-content-item">
+                                                    <div class="project-info-text">2026</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-name-block" aria-hidden="true">
+                                            <div class="project-name-wrapper">
+                                                <div class="project-name-link">
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                </div>
+                                                <div class="project-name-link">
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="project-card-caption">
+                                        <p class="project-summary">A live meal-subscription platform for an Ottawa halal kitchen.</p>
+                                        <ul class="tag-list"><li class="tag">Next.js</li><li class="tag">Supabase</li><li class="tag">Stripe</li><li class="tag">Playwright</li></ul>
+                                    </div>
+                                </div>
+                                <div data-w-id="785628a1-e0ca-bc88-ad87-3a11323bff9f" class="project-container">
+                                    <a data-w-id="785628a1-e0ca-bc88-ad87-3a11323bffa3" href="/WesternFormulaRacing.html"
+                                        class="project-link-wrapper w-inline-block"
+                                        aria-label="Western Formula Racing, 2026">
+                                        <div class="project-content-wrap">
+                                            <img src="/images/projects/western-formula-racing/home-desktop.webp" loading="lazy" sizes="(max-width: 767px) 100vw, 50vw"
+                                                class="project-image" alt="Western Formula Racing home page on desktop" />
+                                        </div>
+                                        <div class="project-thumbnail-wrap">
+                                            <img src="/images/projects/western-formula-racing/car-thumb.webp" loading="lazy" sizes="10rem"
+                                                class="project-thumbnail" alt="" aria-hidden="true" />
+                                        </div>
+                                        <div class="project-content">
+                                            <div class="w-layout-grid project-inner-grid">
+                                                <div class="project-content-item">
+                                                    <h3 class="project-name">Western Formula Racing</h3>
+                                                </div>
+                                                <div class="project-content-item">
+                                                    <div class="project-info-text">2026</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-name-block" aria-hidden="true">
+                                            <div class="project-name-wrapper">
+                                                <div class="project-name-link">
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                </div>
+                                                <div class="project-name-link">
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="project-card-caption">
+                                        <p class="project-summary">The team&#x27;s website, built around an interactive 3D model of the car, with Livery Lab.</p>
+                                        <ul class="tag-list"><li class="tag">Next.js 16</li><li class="tag">three.js</li><li class="tag">GSAP</li><li class="tag">Supabase</li><li class="tag">Stripe</li></ul>
+                                    </div>
+                                </div>
+                                <div data-w-id="785628a1-e0ca-bc88-ad87-3a11323bff9f" class="project-container">
+                                    <a data-w-id="785628a1-e0ca-bc88-ad87-3a11323bffa3" href="/PoweredByKarizma.html"
+                                        class="project-link-wrapper w-inline-block"
+                                        aria-label="Powered by Karizma, 2026">
+                                        <div class="project-content-wrap">
+                                            <img src="/images/projects/powered-by-karizma/home-desktop.webp" loading="lazy" sizes="(max-width: 767px) 100vw, 50vw"
+                                                class="project-image" alt="Powered by Karizma home page on desktop" />
+                                        </div>
+                                        <div class="project-thumbnail-wrap">
+                                            <img src="/images/projects/powered-by-karizma/home-mobile.webp" loading="lazy" sizes="10rem"
+                                                class="project-thumbnail" alt="" aria-hidden="true" />
+                                        </div>
+                                        <div class="project-content">
+                                            <div class="w-layout-grid project-inner-grid">
+                                                <div class="project-content-item">
+                                                    <h3 class="project-name">Powered by Karizma</h3>
+                                                </div>
+                                                <div class="project-content-item">
+                                                    <div class="project-info-text">2026</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-name-block" aria-hidden="true">
+                                            <div class="project-name-wrapper">
+                                                <div class="project-name-link">
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                </div>
+                                                <div class="project-name-link">
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="project-card-caption">
+                                        <p class="project-summary">A 60-page booking site for a makeup artist, with portfolio galleries and masterclasses.</p>
+                                        <ul class="tag-list"><li class="tag">Next.js</li><li class="tag">Cloudflare Workers</li><li class="tag">Resend</li></ul>
+                                    </div>
+                                </div>
+                                <div data-w-id="785628a1-e0ca-bc88-ad87-3a11323bff9f" class="project-container">
+                                    <a data-w-id="785628a1-e0ca-bc88-ad87-3a11323bffa3" href="/LimenDigitalStudio.html"
+                                        class="project-link-wrapper w-inline-block"
+                                        aria-label="Limen Digital Studio, 2026">
+                                        <div class="project-content-wrap">
+                                            <img src="/images/projects/limen-digital-studio/home-desktop.webp" loading="lazy" sizes="(max-width: 767px) 100vw, 50vw"
+                                                class="project-image" alt="Limen Digital Studio home page on desktop" />
+                                        </div>
+                                        <div class="project-thumbnail-wrap">
+                                            <img src="/images/projects/limen-digital-studio/home-mobile.webp" loading="lazy" sizes="10rem"
+                                                class="project-thumbnail" alt="" aria-hidden="true" />
+                                        </div>
+                                        <div class="project-content">
+                                            <div class="w-layout-grid project-inner-grid">
+                                                <div class="project-content-item">
+                                                    <h3 class="project-name">Limen Digital Studio</h3>
+                                                </div>
+                                                <div class="project-content-item">
+                                                    <div class="project-info-text">2026</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-name-block" aria-hidden="true">
+                                            <div class="project-name-wrapper">
+                                                <div class="project-name-link">
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                </div>
+                                                <div class="project-name-link">
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="project-card-caption">
+                                        <p class="project-summary">My studio&#x27;s website and e-commerce platform, with accounts, Stripe checkout and an AI chat concierge.</p>
+                                        <ul class="tag-list"><li class="tag">Next.js</li><li class="tag">Neon Postgres</li><li class="tag">Stripe</li><li class="tag">Anthropic API</li></ul>
+                                    </div>
+                                </div>
+                                <div data-w-id="785628a1-e0ca-bc88-ad87-3a11323bff9f" class="project-container">
+                                    <a data-w-id="785628a1-e0ca-bc88-ad87-3a11323bffa3" href="/EliteFleetRepair.html"
+                                        class="project-link-wrapper w-inline-block"
+                                        aria-label="Elite Fleet Repair Service, 2026">
+                                        <div class="project-content-wrap">
+                                            <img src="/images/projects/elite-fleet-repair/home-desktop.webp" loading="lazy" sizes="(max-width: 767px) 100vw, 50vw"
+                                                class="project-image" alt="Elite Fleet Repair Service home page on desktop" />
+                                        </div>
+                                        <div class="project-thumbnail-wrap">
+                                            <img src="/images/projects/elite-fleet-repair/home-mobile.webp" loading="lazy" sizes="10rem"
+                                                class="project-thumbnail" alt="" aria-hidden="true" />
+                                        </div>
+                                        <div class="project-content">
+                                            <div class="w-layout-grid project-inner-grid">
+                                                <div class="project-content-item">
+                                                    <h3 class="project-name">Elite Fleet Repair Service</h3>
+                                                </div>
+                                                <div class="project-content-item">
+                                                    <div class="project-info-text">2026</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-name-block" aria-hidden="true">
+                                            <div class="project-name-wrapper">
+                                                <div class="project-name-link">
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                </div>
+                                                <div class="project-name-link">
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="project-card-caption">
+                                        <p class="project-summary">A lead-generation site for a mobile truck-repair company, with a coverage map and AI chat.</p>
+                                        <ul class="tag-list"><li class="tag">Next.js</li><li class="tag">Leaflet</li><li class="tag">Zod</li><li class="tag">Cloudflare Workers</li></ul>
+                                    </div>
+                                </div>
+                                <div data-w-id="785628a1-e0ca-bc88-ad87-3a11323bff9f" class="project-container">
+                                    <a data-w-id="785628a1-e0ca-bc88-ad87-3a11323bffa3" href="/Aernova.html"
+                                        class="project-link-wrapper w-inline-block"
+                                        aria-label="Aernova 3D Roof Mapping, 2026">
+                                        <div class="project-content-wrap">
+                                            <img src="/images/projects/aernova/home-desktop.webp" loading="lazy" sizes="(max-width: 767px) 100vw, 50vw"
+                                                class="project-image" alt="Aernova home page on desktop" />
+                                        </div>
+                                        <div class="project-thumbnail-wrap">
+                                            <img src="/images/projects/aernova/home-mobile.webp" loading="lazy" sizes="10rem"
+                                                class="project-thumbnail" alt="" aria-hidden="true" />
+                                        </div>
+                                        <div class="project-content">
+                                            <div class="w-layout-grid project-inner-grid">
+                                                <div class="project-content-item">
+                                                    <h3 class="project-name">Aernova 3D Roof Mapping</h3>
+                                                </div>
+                                                <div class="project-content-item">
+                                                    <div class="project-info-text">2026</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-name-block" aria-hidden="true">
+                                            <div class="project-name-wrapper">
+                                                <div class="project-name-link">
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                </div>
+                                                <div class="project-name-link">
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="project-card-caption">
+                                        <p class="project-summary">An interactive 3D viewer for drone-captured roof models.</p>
+                                        <ul class="tag-list"><li class="tag">Next.js</li><li class="tag">React Three Fiber</li><li class="tag">three.js</li></ul>
+                                    </div>
+                                </div>
+                                <div data-w-id="785628a1-e0ca-bc88-ad87-3a11323bff9f" class="project-container">
+                                    <a data-w-id="785628a1-e0ca-bc88-ad87-3a11323bffa3" href="/DentalDeluxe.html"
+                                        class="project-link-wrapper w-inline-block"
+                                        aria-label="DentalDeluxe, 2026">
+                                        <div class="project-content-wrap">
+                                            <img src="/images/projects/dentaldeluxe/home-desktop.webp" loading="lazy" sizes="(max-width: 767px) 100vw, 50vw"
+                                                class="project-image" alt="DentalDeluxe home page on desktop" />
+                                        </div>
+                                        <div class="project-thumbnail-wrap">
+                                            <img src="/images/projects/dentaldeluxe/home-mobile.webp" loading="lazy" sizes="10rem"
+                                                class="project-thumbnail" alt="" aria-hidden="true" />
+                                        </div>
+                                        <div class="project-content">
+                                            <div class="w-layout-grid project-inner-grid">
+                                                <div class="project-content-item">
+                                                    <h3 class="project-name">DentalDeluxe</h3>
+                                                </div>
+                                                <div class="project-content-item">
+                                                    <div class="project-info-text">2026</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-name-block" aria-hidden="true">
+                                            <div class="project-name-wrapper">
+                                                <div class="project-name-link">
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                </div>
+                                                <div class="project-name-link">
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="project-card-caption">
+                                        <p class="project-summary">An oral-care e-commerce store with Subscribe &amp; Save billing and a 3D tooth animation.</p>
+                                        <ul class="tag-list"><li class="tag">Next.js</li><li class="tag">Supabase</li><li class="tag">Stripe</li><li class="tag">Cloudflare Workers</li></ul>
+                                    </div>
+                                </div>
+                                <div data-w-id="785628a1-e0ca-bc88-ad87-3a11323bff9f" class="project-container">
+                                    <a data-w-id="785628a1-e0ca-bc88-ad87-3a11323bffa3" href="/RealEstatePlatform.html"
+                                        class="project-link-wrapper w-inline-block"
+                                        aria-label="Real Estate Platform, 2026">
+                                        <div class="project-content-wrap">
+                                            <img src="/images/projects/real-estate-platform/home-desktop.webp" loading="lazy" sizes="(max-width: 767px) 100vw, 50vw"
+                                                class="project-image" alt="Real estate site home page on desktop" />
+                                        </div>
+                                        <div class="project-thumbnail-wrap">
+                                            <img src="/images/projects/real-estate-platform/home-mobile.webp" loading="lazy" sizes="10rem"
+                                                class="project-thumbnail" alt="" aria-hidden="true" />
+                                        </div>
+                                        <div class="project-content">
+                                            <div class="w-layout-grid project-inner-grid">
+                                                <div class="project-content-item">
+                                                    <h3 class="project-name">Real Estate Platform</h3>
+                                                </div>
+                                                <div class="project-content-item">
+                                                    <div class="project-info-text">2026</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-name-block" aria-hidden="true">
+                                            <div class="project-name-wrapper">
+                                                <div class="project-name-link">
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                </div>
+                                                <div class="project-name-link">
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="project-card-caption">
+                                        <p class="project-summary">A real-estate site with AI search, a chatbot over live listings and online booking.</p>
+                                        <ul class="tag-list"><li class="tag">Next.js</li><li class="tag">PostgreSQL (pgvector)</li><li class="tag">Anthropic API</li><li class="tag">Cloudflare Workers</li></ul>
+                                    </div>
+                                </div>
+                                <div data-w-id="785628a1-e0ca-bc88-ad87-3a11323bff9f" class="project-container">
+                                    <a data-w-id="785628a1-e0ca-bc88-ad87-3a11323bffa3" href="/NewHorizonsWebsites.html"
+                                        class="project-link-wrapper w-inline-block"
+                                        aria-label="New Horizons Truck Driving School, 2026">
+                                        <div class="project-content-wrap">
+                                            <img src="/images/projects/new-horizons-websites/mississauga-desktop.webp" loading="lazy" sizes="(max-width: 767px) 100vw, 50vw"
+                                                class="project-image" alt="New Horizons Truck Driving School home page on desktop" />
+                                        </div>
+                                        <div class="project-thumbnail-wrap">
+                                            <img src="/images/projects/new-horizons-websites/mississauga-mobile.webp" loading="lazy" sizes="10rem"
+                                                class="project-thumbnail" alt="" aria-hidden="true" />
+                                        </div>
+                                        <div class="project-content">
+                                            <div class="w-layout-grid project-inner-grid">
+                                                <div class="project-content-item">
+                                                    <h3 class="project-name">New Horizons Truck Driving School</h3>
+                                                </div>
+                                                <div class="project-content-item">
+                                                    <div class="project-info-text">2026</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-name-block" aria-hidden="true">
+                                            <div class="project-name-wrapper">
+                                                <div class="project-name-link">
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                </div>
+                                                <div class="project-name-link">
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="project-card-caption">
+                                        <p class="project-summary">Websites for the school&#x27;s Mississauga and Ottawa locations.</p>
+                                        <ul class="tag-list"><li class="tag">Next.js 16</li><li class="tag">Tailwind CSS</li><li class="tag">TypeScript</li></ul>
+                                    </div>
+                                </div>
+                                </div>
+                            </section>
+                            <section class="project-group" id="personal-and-school" aria-labelledby="personal-and-school-title">
+                                <div class="project-group-header">
+                                    <h2 class="project-group-title" id="personal-and-school-title">Personal and School</h2>
+                                    <p class="project-group-note">Side projects, school work and hackathons.</p>
+                                </div>
+                                <div class="project-cards">
+                                <div data-w-id="785628a1-e0ca-bc88-ad87-3a11323bff9f" class="project-container">
+                                    <a data-w-id="785628a1-e0ca-bc88-ad87-3a11323bffa3" href="/Tangent.html"
+                                        class="project-link-wrapper w-inline-block"
+                                        aria-label="Tangent, 2026">
+                                        <div class="project-content-wrap">
+                                            <img src="/images/projects/tangent/home-desktop.webp" loading="lazy" sizes="(max-width: 767px) 100vw, 50vw"
+                                                class="project-image" alt="Tangent home page on desktop" />
+                                        </div>
+                                        <div class="project-thumbnail-wrap">
+                                            <img src="/images/projects/tangent/home-mobile.webp" loading="lazy" sizes="10rem"
+                                                class="project-thumbnail" alt="" aria-hidden="true" />
+                                        </div>
+                                        <div class="project-content">
+                                            <div class="w-layout-grid project-inner-grid">
+                                                <div class="project-content-item">
+                                                    <h3 class="project-name">Tangent</h3>
+                                                </div>
+                                                <div class="project-content-item">
+                                                    <div class="project-info-text">2026</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-name-block" aria-hidden="true">
+                                            <div class="project-name-wrapper">
+                                                <div class="project-name-link">
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                </div>
+                                                <div class="project-name-link">
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="project-card-caption">
+                                        <p class="project-summary">An online learning platform for high-school students, following the Ontario curriculum.</p>
+                                        <ul class="tag-list"><li class="tag">React</li><li class="tag">TypeScript</li><li class="tag">Express</li><li class="tag">SQLite</li><li class="tag">Python</li></ul>
+                                    </div>
+                                </div>
+                                <div data-w-id="785628a1-e0ca-bc88-ad87-3a11323bff9f" class="project-container">
+                                    <a data-w-id="785628a1-e0ca-bc88-ad87-3a11323bffa3" href="/Clipper.html"
+                                        class="project-link-wrapper w-inline-block"
+                                        aria-label="Clipper, 2026">
+                                        <div class="project-content-wrap">
+                                            <img src="/images/projects/clipper/card.webp" loading="lazy" sizes="(max-width: 767px) 100vw, 50vw"
+                                                class="project-image" alt="Clipper pipeline diagram: record, score, transcribe, render, human review, package" />
+                                        </div>
+                                        <div class="project-thumbnail-wrap">
+                                            <img src="/images/projects/clipper/card.webp" loading="lazy" sizes="10rem"
+                                                class="project-thumbnail" alt="" aria-hidden="true" />
+                                        </div>
+                                        <div class="project-content">
+                                            <div class="w-layout-grid project-inner-grid">
+                                                <div class="project-content-item">
+                                                    <h3 class="project-name">Clipper</h3>
+                                                </div>
+                                                <div class="project-content-item">
+                                                    <div class="project-info-text">2026</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-name-block" aria-hidden="true">
+                                            <div class="project-name-wrapper">
+                                                <div class="project-name-link">
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                </div>
+                                                <div class="project-name-link">
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="project-card-caption">
+                                        <p class="project-summary">A Python tool that finds highlight moments in live streams and turns them into captioned vertical clips for a person to review.</p>
+                                        <ul class="tag-list"><li class="tag">Python</li><li class="tag">FFmpeg</li><li class="tag">faster-whisper</li><li class="tag">FastAPI</li><li class="tag">SQLite</li></ul>
+                                    </div>
+                                </div>
+                                <div data-w-id="785628a1-e0ca-bc88-ad87-3a11323bff9f" class="project-container">
+                                    <a data-w-id="785628a1-e0ca-bc88-ad87-3a11323bffa3" href="/WebsiteAutomation.html"
+                                        class="project-link-wrapper w-inline-block"
+                                        aria-label="Website Automation, 2026">
+                                        <div class="project-content-wrap">
+                                            <img src="/images/projects/website-automation/report-desktop.webp" loading="lazy" sizes="(max-width: 767px) 100vw, 50vw"
+                                                class="project-image" alt="Website Automation daily health report on desktop" />
+                                        </div>
+                                        <div class="project-thumbnail-wrap">
+                                            <img src="/images/projects/website-automation/report-mobile.webp" loading="lazy" sizes="10rem"
+                                                class="project-thumbnail" alt="" aria-hidden="true" />
+                                        </div>
+                                        <div class="project-content">
+                                            <div class="w-layout-grid project-inner-grid">
+                                                <div class="project-content-item">
+                                                    <h3 class="project-name">Website Automation</h3>
+                                                </div>
+                                                <div class="project-content-item">
+                                                    <div class="project-info-text">2026</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-name-block" aria-hidden="true">
+                                            <div class="project-name-wrapper">
+                                                <div class="project-name-link">
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                </div>
+                                                <div class="project-name-link">
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="project-card-caption">
+                                        <p class="project-summary">A nightly monitor that checks the websites my studio looks after, fixes safe problems and emails a health report.</p>
+                                        <ul class="tag-list"><li class="tag">Node.js</li><li class="tag">Playwright</li><li class="tag">Cloudflare Workers</li><li class="tag">Cloudflare API</li><li class="tag">Anthropic API</li></ul>
+                                    </div>
+                                </div>
+                                <div data-w-id="785628a1-e0ca-bc88-ad87-3a11323bff9f" class="project-container">
+                                    <a data-w-id="785628a1-e0ca-bc88-ad87-3a11323bffa3" href="/AppointmentBookingSystem.html"
+                                        class="project-link-wrapper w-inline-block"
+                                        aria-label="Appointment Booking System, 2025">
+                                        <div class="project-content-wrap">
+                                            <img src="/images/projects/appointment-booking/calendar.webp" loading="lazy" sizes="(max-width: 767px) 100vw, 50vw"
+                                                class="project-image" alt="Calendar grid with three booked time slots" />
+                                        </div>
+                                        <div class="project-thumbnail-wrap">
+                                            <img src="/images/projects/appointment-booking/calendar.webp" loading="lazy" sizes="10rem"
+                                                class="project-thumbnail" alt="" aria-hidden="true" />
+                                        </div>
+                                        <div class="project-content">
+                                            <div class="w-layout-grid project-inner-grid">
+                                                <div class="project-content-item">
+                                                    <h3 class="project-name">Appointment Booking System</h3>
+                                                </div>
+                                                <div class="project-content-item">
+                                                    <div class="project-info-text">2025</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-name-block" aria-hidden="true">
+                                            <div class="project-name-wrapper">
+                                                <div class="project-name-link">
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                </div>
+                                                <div class="project-name-link">
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="project-card-caption">
+                                        <p class="project-summary">A booking system with a live calendar, email reminders and an admin dashboard.</p>
+                                        <ul class="tag-list"><li class="tag">Node.js</li><li class="tag">Express</li><li class="tag">MongoDB</li><li class="tag">FullCalendar</li></ul>
+                                    </div>
+                                </div>
+                                <div data-w-id="785628a1-e0ca-bc88-ad87-3a11323bff9f" class="project-container">
+                                    <a data-w-id="785628a1-e0ca-bc88-ad87-3a11323bffa3" href="/AirplaneBoardingSystem.html"
+                                        class="project-link-wrapper w-inline-block"
+                                        aria-label="Airplane Boarding System, 2025">
+                                        <div class="project-content-wrap">
+                                            <img src="/images/projects/airplane-boarding/menu.webp" loading="lazy" sizes="(max-width: 767px) 100vw, 50vw"
+                                                class="project-image" alt="Airplane Boarding System console menu with six options" />
+                                        </div>
+                                        <div class="project-thumbnail-wrap">
+                                            <img src="/images/projects/airplane-boarding/seat-map.webp" loading="lazy" sizes="10rem"
+                                                class="project-thumbnail" alt="" aria-hidden="true" />
+                                        </div>
+                                        <div class="project-content">
+                                            <div class="w-layout-grid project-inner-grid">
+                                                <div class="project-content-item">
+                                                    <h3 class="project-name">Airplane Boarding System</h3>
+                                                </div>
+                                                <div class="project-content-item">
+                                                    <div class="project-info-text">2025</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-name-block" aria-hidden="true">
+                                            <div class="project-name-wrapper">
+                                                <div class="project-name-link">
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                </div>
+                                                <div class="project-name-link">
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="project-card-caption">
+                                        <p class="project-summary">Airplane boarding and disembarking in Java, using linear data structures.</p>
+                                        <ul class="tag-list"><li class="tag">Java</li><li class="tag">Data structures</li><li class="tag">Object-oriented design</li></ul>
+                                    </div>
+                                </div>
+                                <div data-w-id="785628a1-e0ca-bc88-ad87-3a11323bff9f" class="project-container">
+                                    <a data-w-id="785628a1-e0ca-bc88-ad87-3a11323bffa3" href="/CourseFinder.html"
+                                        class="project-link-wrapper w-inline-block"
+                                        aria-label="Western Class Finder, 2025">
+                                        <div class="project-content-wrap">
+                                            <img src="/images/projects/western-class-finder/home.webp" loading="lazy" sizes="(max-width: 767px) 100vw, 50vw"
+                                                class="project-image" alt="Western Class Finder home screen with the load and filter panels" />
+                                        </div>
+                                        <div class="project-thumbnail-wrap">
+                                            <img src="/images/projects/western-class-finder/course-detail.webp" loading="lazy" sizes="10rem"
+                                                class="project-thumbnail" alt="" aria-hidden="true" />
+                                        </div>
+                                        <div class="project-content">
+                                            <div class="w-layout-grid project-inner-grid">
+                                                <div class="project-content-item">
+                                                    <h3 class="project-name">Western Class Finder</h3>
+                                                </div>
+                                                <div class="project-content-item">
+                                                    <div class="project-info-text">2025</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-name-block" aria-hidden="true">
+                                            <div class="project-name-wrapper">
+                                                <div class="project-name-link">
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                </div>
+                                                <div class="project-name-link">
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="project-card-caption">
+                                        <p class="project-summary">A course explorer that loads course data from JSON with filtering and sorting.</p>
+                                        <ul class="tag-list"><li class="tag">JavaScript</li><li class="tag">HTML</li><li class="tag">CSS</li></ul>
+                                    </div>
+                                </div>
+                                <div data-w-id="785628a1-e0ca-bc88-ad87-3a11323bff9f" class="project-container">
+                                    <a data-w-id="785628a1-e0ca-bc88-ad87-3a11323bffa3" href="/WellnessLamp.html"
+                                        class="project-link-wrapper w-inline-block"
+                                        aria-label="Wellness Lamp, 2024">
+                                        <div class="project-content-wrap">
+                                            <img src="/images/projects/wellness-lamp/render.webp" loading="lazy" sizes="(max-width: 767px) 100vw, 50vw"
+                                                class="project-image" alt="Render of the Wellness Lamp&#x27;s twisted white diffuser" />
+                                        </div>
+                                        <div class="project-thumbnail-wrap">
+                                            <img src="/images/projects/wellness-lamp/model.webp" loading="lazy" sizes="10rem"
+                                                class="project-thumbnail" alt="" aria-hidden="true" />
+                                        </div>
+                                        <div class="project-content">
+                                            <div class="w-layout-grid project-inner-grid">
+                                                <div class="project-content-item">
+                                                    <h3 class="project-name">Wellness Lamp</h3>
+                                                </div>
+                                                <div class="project-content-item">
+                                                    <div class="project-info-text">2024</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-name-block" aria-hidden="true">
+                                            <div class="project-name-wrapper">
+                                                <div class="project-name-link">
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                </div>
+                                                <div class="project-name-link">
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="project-card-caption">
+                                        <p class="project-summary">A 3D-printed lamp with an Android app for remote power, dimming, an alarm and RGB lighting.</p>
+                                        <ul class="tag-list"><li class="tag">Arduino</li><li class="tag">C++</li><li class="tag">Android</li><li class="tag">3D printing</li></ul>
+                                    </div>
+                                </div>
+                                <div data-w-id="785628a1-e0ca-bc88-ad87-3a11323bff9f" class="project-container">
+                                    <a data-w-id="785628a1-e0ca-bc88-ad87-3a11323bffa3" href="/PostureDetection.html"
+                                        class="project-link-wrapper w-inline-block"
+                                        aria-label="Posture Detector, 2024">
+                                        <div class="project-content-wrap">
+                                            <img src="/images/projects/posture-detector/good-posture.webp" loading="lazy" sizes="(max-width: 767px) 100vw, 50vw"
+                                                class="project-image" alt="Example of upright posture at a desk, marked with green checks" />
+                                        </div>
+                                        <div class="project-thumbnail-wrap">
+                                            <img src="/images/projects/posture-detector/bad-posture.webp" loading="lazy" sizes="10rem"
+                                                class="project-thumbnail" alt="" aria-hidden="true" />
+                                        </div>
+                                        <div class="project-content">
+                                            <div class="w-layout-grid project-inner-grid">
+                                                <div class="project-content-item">
+                                                    <h3 class="project-name">Posture Detector</h3>
+                                                </div>
+                                                <div class="project-content-item">
+                                                    <div class="project-info-text">2024</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-name-block" aria-hidden="true">
+                                            <div class="project-name-wrapper">
+                                                <div class="project-name-link">
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                </div>
+                                                <div class="project-name-link">
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="project-card-caption">
+                                        <p class="project-summary">A webcam posture monitor with live colour and sound alerts and a real-time posture graph.</p>
+                                        <ul class="tag-list"><li class="tag">C++</li><li class="tag">OpenCV</li><li class="tag">MediaPipe</li></ul>
+                                    </div>
+                                </div>
+                                <div data-w-id="785628a1-e0ca-bc88-ad87-3a11323bff9f" class="project-container">
+                                    <a data-w-id="785628a1-e0ca-bc88-ad87-3a11323bffa3" href="https://ibtportfolio.vercel.app/" target="_blank" rel="noopener"
+                                        class="project-link-wrapper w-inline-block"
+                                        aria-label="IBT Program Portfolio, 2023 (opens in a new tab)">
+                                        <div class="project-content-wrap">
+                                            <img src="/images/projects/ibt-portfolio/plans.webp" loading="lazy" sizes="(max-width: 767px) 100vw, 50vw"
+                                                class="project-image" alt="IBT Program Portfolio page with a post-secondary plans timeline" />
+                                        </div>
+                                        <div class="project-thumbnail-wrap">
+                                            <img src="/images/projects/ibt-portfolio/plans.webp" loading="lazy" sizes="10rem"
+                                                class="project-thumbnail" alt="" aria-hidden="true" />
+                                        </div>
+                                        <div class="project-content">
+                                            <div class="w-layout-grid project-inner-grid">
+                                                <div class="project-content-item">
+                                                    <h3 class="project-name">IBT Program Portfolio</h3>
+                                                </div>
+                                                <div class="project-content-item">
+                                                    <div class="project-info-text">2023</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-name-block" aria-hidden="true">
+                                            <div class="project-name-wrapper">
+                                                <div class="project-name-link">
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                </div>
+                                                <div class="project-name-link">
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="project-card-caption">
+                                        <p class="project-summary">My high-school IBT program portfolio website.</p>
+                                        <ul class="tag-list"><li class="tag">HTML</li><li class="tag">CSS</li><li class="tag">Bootstrap</li></ul>
+                                    </div>
+                                </div>
+                                <div data-w-id="785628a1-e0ca-bc88-ad87-3a11323bff9f" class="project-container">
+                                    <a data-w-id="785628a1-e0ca-bc88-ad87-3a11323bffa3" href="/KnowYourClass.html"
+                                        class="project-link-wrapper w-inline-block"
+                                        aria-label="Know Your Class, 2021">
+                                        <div class="project-content-wrap">
+                                            <img src="/images/projects/know-your-class/students.webp" loading="lazy" sizes="(max-width: 767px) 100vw, 50vw"
+                                                class="project-image" alt="Students in a classroom" />
+                                        </div>
+                                        <div class="project-thumbnail-wrap">
+                                            <img src="/images/projects/know-your-class/hack-to-tomorrow.webp" loading="lazy" sizes="10rem"
+                                                class="project-thumbnail" alt="" aria-hidden="true" />
+                                        </div>
+                                        <div class="project-content">
+                                            <div class="w-layout-grid project-inner-grid">
+                                                <div class="project-content-item">
+                                                    <h3 class="project-name">Know Your Class</h3>
+                                                </div>
+                                                <div class="project-content-item">
+                                                    <div class="project-info-text">2021</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-name-block" aria-hidden="true">
+                                            <div class="project-name-wrapper">
+                                                <div class="project-name-link">
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                </div>
+                                                <div class="project-name-link">
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="project-card-caption">
+                                        <p class="project-summary">Hack to Tomorrow, 2nd place: an app and website connecting students and teachers during COVID-19.</p>
+                                        <ul class="tag-list"><li class="tag">App</li><li class="tag">Website</li></ul>
+                                    </div>
+                                </div>
+                                <div data-w-id="785628a1-e0ca-bc88-ad87-3a11323bff9f" class="project-container">
+                                    <a data-w-id="785628a1-e0ca-bc88-ad87-3a11323bffa3" href="/ServerBlank.html"
+                                        class="project-link-wrapper w-inline-block"
+                                        aria-label="Server Blank, 2021">
+                                        <div class="project-content-wrap">
+                                            <img src="/images/projects/server-blank/discord-server.webp" loading="lazy" sizes="(max-width: 767px) 100vw, 50vw"
+                                                class="project-image" alt="A Discord server set up by the Server Blank bot" />
+                                        </div>
+                                        <div class="project-thumbnail-wrap">
+                                            <img src="/images/projects/server-blank/bot.webp" loading="lazy" sizes="10rem"
+                                                class="project-thumbnail" alt="" aria-hidden="true" />
+                                        </div>
+                                        <div class="project-content">
+                                            <div class="w-layout-grid project-inner-grid">
+                                                <div class="project-content-item">
+                                                    <h3 class="project-name">Server Blank</h3>
+                                                </div>
+                                                <div class="project-content-item">
+                                                    <div class="project-info-text">2021</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-name-block" aria-hidden="true">
+                                            <div class="project-name-wrapper">
+                                                <div class="project-name-link">
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                </div>
+                                                <div class="project-name-link">
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                                <span class="view-text">View</span>
+                                                                <span class="view-text">↗</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="project-card-caption">
+                                        <p class="project-summary">A Discord bot that sets up a complete server for you, built at the 24-hour Banana Hacks hackathon.</p>
+                                        <ul class="tag-list"><li class="tag">Node.js</li><li class="tag">Discord.js</li><li class="tag">JavaScript</li></ul>
+                                    </div>
+                                </div>
+                                </div>
+                            </section>
                             </div>
                         </div>
                     </div>
@@ -461,8 +1358,8 @@
                             <div class="circle-item _01">
                                 <div class="circle-image-wrapper">
                                     <div class="cta-image-item _01">
-                                        <img sizes="(max-width: 880px) 100vw, 880px" src="/images/neelesh2.png"
-                                            loading="lazy" class="cta-image _01" />
+                                        <img sizes="(max-width: 880px) 100vw, 880px" src="/images/photos/neelesh-portrait.webp"
+                                            loading="lazy" class="cta-image _01" alt="Portrait of Neelesh Sirdana" />
                                     </div>
                                 </div>
                             </div>
@@ -470,8 +1367,8 @@
                                 <div class="circle-image-wrapper">
                                     <div class="cta-image-item _02">
                                         <img sizes="(max-width: 880px) 100vw, 880px"
-                                            src="/images/DECA Provincials 2023.jpg" loading="lazy"
-                                            class="cta-image _02" />
+                                            src="/images/photos/deca-provincials-2023.webp" loading="lazy"
+                                            class="cta-image _02" alt="Neelesh with his team at DECA Provincials 2023" />
                                     </div>
                                 </div>
                             </div>
@@ -479,32 +1376,32 @@
                                 <div class="circle-image-wrapper">
                                     <div class="cta-image-item _03">
                                         <img sizes="(max-width: 880px) 100vw, 880px"
-                                            src="/images/DECA Provincials 2024.jpg" loading="lazy"
-                                            class="cta-image _03" />
+                                            src="/images/photos/deca-provincials-2024.webp" loading="lazy"
+                                            class="cta-image _03" alt="Neelesh with two others at DECA Provincials 2024" />
                                     </div>
                                 </div>
                             </div>
                             <div class="circle-item _04">
                                 <div class="circle-image-wrapper">
                                     <div class="cta-image-item _04">
-                                        <img sizes="(max-width: 880px) 100vw, 880px" src="/images/Ivey Case Comp.jpg"
-                                            loading="lazy" class="cta-image _04" />
+                                        <img sizes="(max-width: 880px) 100vw, 880px" src="/images/photos/ivey-case-competition.webp"
+                                            loading="lazy" class="cta-image _04" alt="Neelesh's team at the Ivey Case Competition" />
                                     </div>
                                 </div>
                             </div>
                             <div class="circle-item _05">
                                 <div class="circle-image-wrapper">
                                     <div class="cta-image-item _05">
-                                        <img sizes="(max-width: 880px) 100vw, 880px" src="/images/DECA MC.JPEG"
-                                            loading="lazy" class="cta-image _05" />
+                                        <img sizes="(max-width: 880px) 100vw, 880px" src="/images/photos/deca-emcee.webp"
+                                            loading="lazy" class="cta-image _05" alt="Neelesh speaking on stage as emcee at a DECA event" />
                                     </div>
                                 </div>
                             </div>
                             <div class="circle-item _06">
                                 <div class="circle-image-wrapper">
                                     <div class="cta-image-item _06">
-                                        <img sizes="(max-width: 880px) 100vw, 880px" src="/images/engineering.jpg"
-                                            loading="lazy" class="cta-image _06" />
+                                        <img sizes="(max-width: 880px) 100vw, 880px" src="/images/photos/western-engineering.webp"
+                                            loading="lazy" class="cta-image _06" alt="Western Engineering logo" />
                                     </div>
                                 </div>
                             </div>
@@ -519,7 +1416,7 @@
                                             <div class="button-text-block">
                                                 <div class="button-text">Get in Touch</div>
                                             </div>
-                                            <div class="button-text-block button-text-bottom">
+                                            <div class="button-text-block button-text-bottom" aria-hidden="true">
                                                 <div class="button-text">Get in Touch</div>
                                             </div>
                                         </div>
@@ -536,96 +1433,92 @@
                 <div class="container-large">
                     <div class="footer-padding">
                         <div class="footer-top-content">
-                            <a href="/" class="footer-link w-inline-block">
-                                <img src="/images/Neelesh Sirdana.png" loading="lazy" class="footer-logo" />
+                            <a href="/" class="footer-link w-inline-block" aria-label="Neelesh Sirdana, home">
+                                <img src="/images/Neelesh Sirdana.png" loading="lazy" class="footer-logo" alt="Neelesh Sirdana" />
                             </a>
                             <div class="text-size-regular">Turning imagination into innovation, one project at a time.</div>
                             <div class="spacer-xsmall"></div>
                             <div class="social-media-wrapper">
-                                <a data-w-id="d02f4b07-c966-2f0b-1c24-7d46a6be998c" href="/NeeleshSirdanaResume.docx"
-                                    target="_blank" class="social-link w-inline-block">
+                                <a data-w-id="d02f4b07-c966-2f0b-1c24-7d46a6be998c" href="/Neelesh_Sirdana_Resume.pdf" target="_blank" rel="noopener"
+                                    class="social-link w-inline-block" aria-label="Resume (PDF, opens in a new tab)">
                                     <div class="social-icon-wrap">
                                         <div class="social-icon w-embed">
-                                            <img src="/images/resume.png" />
+                                            <img src="/images/resume.png" alt="Resume" />
                                         </div>
-                                        <div class="social-icon w-embed">
-                                            <img src="/images/resume.png" />
+                                        <div class="social-icon w-embed" aria-hidden="true">
+                                            <img src="/images/resume.png" alt="" />
                                         </div>
                                     </div>
                                 </a>
-                                <a data-w-id="d02f4b07-c966-2f0b-1c24-7d46a6be998c"
-                                    href="https://www.linkedin.com/in/neeleshsirdana/" target="_blank"
-                                    class="social-link w-inline-block">
+                                <a data-w-id="d02f4b07-c966-2f0b-1c24-7d46a6be998c" href="https://www.linkedin.com/in/neeleshsirdana/" target="_blank" rel="noopener"
+                                    class="social-link w-inline-block" aria-label="LinkedIn">
                                     <div class="social-icon-wrap">
                                         <div class="social-icon w-embed">
-                                            <img src="/images/linkedin.png" />
+                                            <img src="/images/linkedin.png" alt="LinkedIn" />
                                         </div>
-                                        <div class="social-icon w-embed">
-                                            <img src="/images/linkedin.png" />
+                                        <div class="social-icon w-embed" aria-hidden="true">
+                                            <img src="/images/linkedin.png" alt="" />
                                         </div>
                                     </div>
                                 </a>
-                                <a data-w-id="d02f4b07-c966-2f0b-1c24-7d46a6be998c" href="https://github.com/neelesh-7"
-                                    class="social-link w-inline-block" target="_blank">
+                                <a data-w-id="d02f4b07-c966-2f0b-1c24-7d46a6be998c" href="https://github.com/neelesh-7" target="_blank" rel="noopener"
+                                    class="social-link w-inline-block" aria-label="GitHub">
                                     <div class="social-icon-wrap">
                                         <div class="social-icon w-embed">
-                                            <img src="/images/github.png" />
+                                            <img src="/images/github.png" alt="GitHub" />
                                         </div>
-                                        <div class="social-icon w-embed">
-                                            <img src="/images/github.png" />
+                                        <div class="social-icon w-embed" aria-hidden="true">
+                                            <img src="/images/github.png" alt="" />
                                         </div>
                                     </div>
                                 </a>
-                                <a data-w-id="d02f4b07-c966-2f0b-1c24-7d46a6be998c"
-                                    href="mailto:neeleshsirdana1@gmail.com" target="_blank"
-                                    class="social-link w-inline-block">
+                                <a data-w-id="d02f4b07-c966-2f0b-1c24-7d46a6be998c" href="mailto:neeleshsirdana1@gmail.com"
+                                    class="social-link w-inline-block" aria-label="Email neeleshsirdana1@gmail.com">
                                     <div class="social-icon-wrap">
                                         <div class="social-icon w-embed">
-                                            <img src="/images/gmail.png" />
+                                            <img src="/images/gmail.png" alt="Email neeleshsirdana1@gmail.com" />
                                         </div>
-                                        <div class="social-icon w-embed">
-                                            <img src="/images/gmail.png" />
+                                        <div class="social-icon w-embed" aria-hidden="true">
+                                            <img src="/images/gmail.png" alt="" />
                                         </div>
                                     </div>
                                 </a>
-
                             </div>
                         </div>
-                        <div class="footer-menu-wrapper">
-
-                            <a href="/" data-w-id="6bbe1faf-32a3-b199-e459-9afd621fb1fb" aria-current="page"
-                                class="link-button w-inline-block w--current">
+                        <nav class="footer-menu-wrapper" aria-label="Footer">
+                            <a href="/" data-w-id="6bbe1faf-32a3-b199-e459-9afd621fb1fb"
+                                class="link-button w-inline-block">
                                 <div class="link-wrap">
                                     <div class="link-button-text">Home</div>
-                                    <div class="link-button-text is-hover">Home</div>
+                                    <div class="link-button-text is-hover" aria-hidden="true">Home</div>
                                 </div>
                             </a>
-                            <a href="" data-w-id="6bbe1faf-32a3-b199-e459-9afd621fb201"
+                            <a href="/about.html" data-w-id="6bbe1faf-32a3-b199-e459-9afd621fb201"
                                 class="link-button w-inline-block">
                                 <div class="link-wrap">
                                     <div class="link-button-text">About</div>
-                                    <div class="link-button-text is-hover">About</div>
+                                    <div class="link-button-text is-hover" aria-hidden="true">About</div>
                                 </div>
                             </a>
-                            <a href="/projects.html" data-w-id="6bbe1faf-32a3-b199-e459-9afd621fb207"
-                                class="link-button w-inline-block">
+                            <a href="/projects.html" data-w-id="6bbe1faf-32a3-b199-e459-9afd621fb207" aria-current="page"
+                                class="link-button w-inline-block w--current">
                                 <div class="link-wrap">
                                     <div class="link-button-text">Projects</div>
-                                    <div class="link-button-text is-hover">Projects</div>
+                                    <div class="link-button-text is-hover" aria-hidden="true">Projects</div>
                                 </div>
                             </a>
                             <a href="/contact.html" data-w-id="6bbe1faf-32a3-b199-e459-9afd621fb20d"
                                 class="link-button w-inline-block">
                                 <div class="link-wrap">
                                     <div class="link-button-text">Contact</div>
-                                    <div class="link-button-text is-hover">Contact</div>
+                                    <div class="link-button-text is-hover" aria-hidden="true">Contact</div>
                                 </div>
                             </a>
-                        </div>
+                        </nav>
                     </div>
                 </div>
             </div>
-            <div data-w-id="6bbe1faf-32a3-b199-e459-9afd621fb219" class="marquee-text-container">
+            <div data-w-id="6bbe1faf-32a3-b199-e459-9afd621fb219" class="marquee-text-container" aria-hidden="true">
                 <div class="marquee-text-component">
                     <div class="marquee-text-wrapper">
                         <h2 class="marquee-text">Neelesh Sirdana ✺ Neelesh Sirdana ✺ Neelesh Sirdana ✺ Neelesh Sirdana ✺
@@ -643,20 +1536,20 @@
                         <div id="w-node-_6bbe1faf-32a3-b199-e459-9afd621fb224-621fb1e9" class="footer-content-block">
                             <div class="footer-block">
                                 <div class="footer-text">Created by</div>
-                                <a href="" data-w-id="6bbe1faf-32a3-b199-e459-9afd621fb228"
+                                <a href="/about.html" data-w-id="6bbe1faf-32a3-b199-e459-9afd621fb228"
                                     class="link-button w-inline-block">
                                     <div class="link-wrap">
                                         <div class="link-button-text">Neelesh Sirdana</div>
-                                        <div class="link-button-text is-hover">Neelesh Sirdana</div>
+                                        <div class="link-button-text is-hover" aria-hidden="true">Neelesh Sirdana</div>
                                     </div>
                                 </a>
                             </div>
                         </div>
                         <div id="w-node-_6bbe1faf-32a3-b199-e459-9afd621fb237-621fb1e9" class="back-to-top-wrapper">
                             <a href="#top" data-w-id="6bbe1faf-32a3-b199-e459-9afd621fb238"
-                                class="back-to-top-link w-inline-block">
+                                class="back-to-top-link w-inline-block" aria-label="Back to top">
                                 <div class="up-arrow w-embed">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
                                         <path
                                             d="M13.0001 7.82843V20H11.0001V7.82843L5.63614 13.1924L4.22192 11.7782L12.0001 4L19.7783 11.7782L18.3641 13.1924L13.0001 7.82843Z">
                                         </path>
@@ -665,31 +1558,35 @@
                             </a>
                         </div>
                         <div id="w-node-_6bbe1faf-32a3-b199-e459-9afd621fb23a-621fb1e9" class="footer-content-block">
-                                <div class="footer-block">
-                                    <a href="mailto:neeleshsirdana1@gmail.com" data-w-id="6bbe1faf-32a3-b199-e459-9afd621fb23c" class="link-button w-inline-block">
-                                        <div class="link-wrap">
-                                            <div class="link-button-text is-hover">neeleshsirdana1@gmail.com</div>
-                                            <div class="link-button-text">neeleshsirdana1@gmail.com</div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="footer-block">
-                                    <a href="tel:+16475132834" data-w-id="6bbe1faf-32a3-b199-e459-9afd621fb243" class="link-button w-inline-block">
-                                        <div class="link-wrap">
-                                            <div class="link-button-text is-hover">+1 647-513-2834</div>
-                                            <div class="link-button-text">+1 647-513-2834</div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="footer-block">
-                                    <a href="https://www.google.com/maps/place/Brampton,+ON/@43.7248151,-79.9246949,43038m/data=!3m2!1e3!4b1!4m6!3m5!1s0x882b15eaa5d05abf:0x352d31667cc38677!8m2!3d43.7315479!4d-79.7624177!16zL20vMDE1NGZz?entry=ttu&g_ep=EgoyMDI1MDgxOS4wIKXMDSoASAFQAw%3D%3D" data-w-id="6bbe1faf-32a3-b199-e459-9afd621fb24a" class="link-button w-inline-block" target="_blank">
-                                        <div class="link-wrap">
-                                            <div class="link-button-text is-hover">Brampton, Ontario</div>
-                                            <div class="link-button-text">Brampton, Ontario</div>
-                                        </div>
-                                    </a>
-                                </div>
+                            <div class="footer-block">
+                                <a href="mailto:neeleshsirdana1@gmail.com"
+                                    data-w-id="6bbe1faf-32a3-b199-e459-9afd621fb23c" class="link-button w-inline-block">
+                                    <div class="link-wrap">
+                                        <div class="link-button-text is-hover" aria-hidden="true">neeleshsirdana1@gmail.com</div>
+                                        <div class="link-button-text">neeleshsirdana1@gmail.com</div>
+                                    </div>
+                                </a>
                             </div>
+                            <div class="footer-block">
+                                <a href="tel:+16475132834" data-w-id="6bbe1faf-32a3-b199-e459-9afd621fb243"
+                                    class="link-button w-inline-block">
+                                    <div class="link-wrap">
+                                        <div class="link-button-text is-hover" aria-hidden="true">+1 647-513-2834</div>
+                                        <div class="link-button-text">+1 647-513-2834</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="footer-block">
+                                <a href="https://www.google.com/maps/place/Toronto,+ON"
+                                    data-w-id="6bbe1faf-32a3-b199-e459-9afd621fb24a" class="link-button w-inline-block"
+                                    target="_blank" rel="noopener">
+                                    <div class="link-wrap">
+                                        <div class="link-button-text is-hover" aria-hidden="true">Toronto, Ontario</div>
+                                        <div class="link-button-text">Toronto, Ontario</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

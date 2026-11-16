@@ -1,0 +1,691 @@
+/* Additions for the November 2026 update. Loaded after style.css; style.css is unchanged. */
+
+:root {
+  --text-strong: #24418a; /* darker shade of the site blue, readable on the light-blue background */
+  --card-text: #bcd6e0;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--primary-color--white);
+  outline-offset: 3px;
+}
+
+/* ---------- Section headings (smaller sibling of .heading-style-h2) ---------- */
+.section-title {
+  color: var(--primary-color--white);
+  text-transform: uppercase;
+  text-align: center;
+  font-family: Aspekta, Arial, sans-serif;
+  font-size: min(7rem, 9vw); /* scales with the screen so long words never overflow */
+  font-weight: 400;
+  line-height: 1;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.section-intro {
+  max-width: 44rem;
+  margin: 1.5rem auto 0;
+  color: var(--text-strong);
+  text-align: center;
+  font-family: Instrument Serif, Georgia, serif;
+  font-size: 1.75rem;
+  line-height: 1.25;
+}
+
+/* ---------- Timeline (experience, education, activities) ---------- */
+.timeline {
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: minmax(12rem, 1fr) 3fr;
+  column-gap: 3rem;
+  row-gap: 1rem;
+  padding: 2.5rem .5rem;
+  border-bottom: 1px solid var(--border-color--transparent-10);
+}
+
+.timeline-item:first-child {
+  border-top: 1px solid var(--border-color--transparent-10);
+}
+
+.timeline-dates {
+  color: var(--primary-color--white);
+  font-family: Instrument Serif, Georgia, serif;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.timeline-place {
+  margin-top: .5rem;
+  color: var(--text-strong);
+  text-transform: uppercase;
+  font-family: Aspekta, Arial, sans-serif;
+  font-size: .875rem;
+  line-height: 1.2;
+}
+
+.timeline-role {
+  margin: 0;
+  color: var(--primary-color--white);
+  text-transform: uppercase;
+  font-family: Instrument Serif, Georgia, serif;
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: 1.05;
+}
+
+.timeline-org {
+  margin-top: .5rem;
+  color: var(--text-strong);
+  text-transform: uppercase;
+  font-family: Aspekta, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.timeline-points {
+  margin: 1.25rem 0 0;
+  padding-left: 1.25rem;
+  color: var(--text-strong);
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.timeline-points li + li {
+  margin-top: .5rem;
+}
+
+.timeline-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem 1.5rem;
+  margin-top: 1.25rem;
+}
+
+.text-link {
+  color: var(--text-strong);
+  text-transform: uppercase;
+  font-family: Aspekta, Arial, sans-serif;
+  font-size: .875rem;
+  line-height: 1.2;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.text-link:hover {
+  color: var(--primary-color--white);
+}
+
+/* ---------- Tags ---------- */
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tag {
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  padding: .4rem .75rem;
+  color: var(--text-strong);
+  text-transform: uppercase;
+  font-family: Aspekta, Arial, sans-serif;
+  font-size: .75rem;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+/* ---------- Skills cards (reuse the old work-process grid) ---------- */
+.skill-list {
+  justify-content: center;
+}
+
+.skill-list .tag {
+  font-size: .8125rem;
+}
+
+/* ---------- Projects page ---------- */
+.project-group + .project-group {
+  margin-top: 8rem;
+}
+
+.project-group-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem 2rem;
+  padding-bottom: 1.5rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid var(--border-color--transparent-10);
+}
+
+.project-group-title {
+  margin: 0;
+  color: var(--primary-color--white);
+  text-transform: uppercase;
+  font-family: Aspekta, Arial, sans-serif;
+  font-size: 4.5rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.project-group-note {
+  max-width: 26rem;
+  color: var(--text-strong);
+  font-family: Instrument Serif, Georgia, serif;
+  font-size: 1.375rem;
+  line-height: 1.25;
+}
+
+.project-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem 2.5rem;
+}
+
+.project-cards .project-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-cards .project-link-wrapper {
+  height: auto;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+}
+
+.project-cards .project-content-wrap,
+.project-cards .project-image {
+  height: 100%;
+}
+
+.project-cards .project-image {
+  object-position: top center;
+}
+
+.project-cards .project-thumbnail {
+  width: 9rem;
+  height: 9rem;
+  object-position: top center;
+}
+
+.project-cards .project-name {
+  font-size: 1.75rem;
+  line-height: 1.05;
+  margin-top: 0;
+}
+
+.project-cards .project-inner-grid {
+  grid-template-columns: 1fr auto;
+  column-gap: 1rem;
+  align-items: start;
+}
+
+.project-cards .project-name-link {
+  height: 8rem;
+}
+
+.project-cards .view-text {
+  font-size: 6rem;
+}
+
+.project-card-caption {
+  padding: 1.25rem .25rem 0;
+}
+
+.project-summary {
+  margin: 0 0 1rem;
+  color: var(--text-strong);
+  font-size: 1.0625rem;
+  line-height: 1.45;
+}
+
+/* ---------- Project detail pages ---------- */
+.project-facts {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: .75rem 1.5rem;
+  margin: 1.75rem 0;
+  padding: 1.25rem 0;
+  border-top: 1px solid var(--border-color--transparent-10);
+  border-bottom: 1px solid var(--border-color--transparent-10);
+}
+
+.project-facts dt {
+  color: var(--text-strong);
+  text-transform: uppercase;
+  font-family: Aspekta, Arial, sans-serif;
+  font-size: .8125rem;
+  line-height: 1.5;
+}
+
+.project-facts dd {
+  margin: 0;
+  color: var(--text-strong);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.text-rich-text h3 {
+  margin: 2.25rem 0 .75rem;
+  font-size: 1.5rem;
+  line-height: 1.1;
+}
+
+.text-rich-text p,
+.text-rich-text li {
+  color: var(--text-strong);
+}
+
+.text-rich-text ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.text-rich-text li {
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.text-rich-text li + li {
+  margin-top: .5rem;
+}
+
+.project-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.project-note {
+  margin-top: 1.25rem;
+  color: var(--text-strong);
+  font-family: Instrument Serif, Georgia, serif;
+  font-size: 1.25rem;
+  line-height: 1.3;
+}
+
+.project-image-wrap.is-wide {
+  grid-column: 1 / -1;
+}
+
+.project-image-wrap img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.project-image-wrap.is-phone {
+  max-width: 18rem;
+  justify-self: center;
+}
+
+/* ---------- Contact form ---------- */
+.contact-form-wrapper textarea.form-input {
+  width: 100%;
+  min-height: 10rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  resize: vertical;
+  font: inherit;
+}
+
+.contact-form-wrapper .form-input {
+  width: 100%;
+}
+
+.form-honeypot {
+  display: none;
+}
+
+.form-status {
+  margin-top: 1.5rem;
+  color: #fff;
+  text-align: center;
+  font-family: Instrument Serif, Georgia, serif;
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+.thanks-block {
+  max-width: 40rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* ---------- Responsive ---------- */
+@media screen and (max-width: 991px) {
+  .project-group-title { font-size: 3.5rem; }
+  .project-cards { gap: 3rem 1.5rem; }
+}
+
+@media screen and (max-width: 767px) {
+  .section-intro { font-size: 1.375rem; }
+  .timeline-item { grid-template-columns: 1fr; padding: 2rem .25rem; }
+  .timeline-role { font-size: 1.875rem; }
+  .project-group + .project-group { margin-top: 5rem; }
+  .project-group-title { font-size: 2.75rem; }
+  .project-cards { grid-template-columns: 1fr; }
+  .project-cards .project-thumbnail { width: 6rem; height: 6rem; }
+  .project-cards .project-name { font-size: 1.375rem; }
+  .project-cards .view-text { font-size: 4rem; }
+  .project-cards .project-name-link { height: 5rem; }
+}
+
+@media screen and (max-width: 479px) {
+  .timeline-dates { font-size: 1.25rem; }
+  .timeline-role { font-size: 1.625rem; }
+  .project-group-title { font-size: 2.25rem; }
+  .project-group-note { font-size: 1.125rem; }
+  .project-cards .project-thumbnail { width: 4.5rem; height: 4.5rem; }
+  .project-cards .project-name { font-size: 1.125rem; }
+  .project-facts { grid-template-columns: 1fr; gap: .25rem; }
+  .project-facts dd { margin-bottom: .5rem; }
+}
+
+/* ---------- Heading tags changed for a correct outline (one h1 per page) ---------- */
+div.header-title {
+  margin: 0;
+  line-height: 1;
+}
+
+.text-rich-text .project-title {
+  margin: 0;
+  font-size: 4rem;
+  line-height: 1.05;
+}
+
+.text-rich-text h2.project-subheading {
+  margin: 2.25rem 0 .75rem;
+  font-size: 1.5rem;
+  line-height: 1.1;
+}
+
+@media screen and (max-width: 991px) {
+  .text-rich-text .project-title { font-size: 3.25rem; }
+}
+
+@media screen and (max-width: 767px) {
+  .text-rich-text .project-title { font-size: 2.25rem; }
+}
+
+@media screen and (max-width: 479px) {
+  .text-rich-text .project-title { font-size: 1.875rem; }
+  .text-rich-text h2.project-subheading { font-size: 1.25rem; }
+}
+
+/* .padding-section is used by the template but had no rule in style.css */
+.padding-section {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+@media screen and (max-width: 767px) {
+  .padding-section { padding-top: 5rem; padding-bottom: 5rem; }
+}
+
+@media screen and (max-width: 479px) {
+  .padding-section { padding-top: 4rem; padding-bottom: 4rem; }
+}
+
+/* Let long skill names wrap so the skills grid never pushes past a phone screen */
+.work-process-component-grid > *,
+.work-process-inner-grid > * {
+  min-width: 0;
+}
+
+.skill-list .tag {
+  white-space: normal;
+  text-align: center;
+}
+
+/* Project page buttons line up with the text instead of centring */
+.project-buttons .button-wrap {
+  width: auto;
+  justify-content: flex-start;
+}
+
+/* ---------- Fixes from the pre-publish check ---------- */
+
+/* Project pages: on phones and tablets show the title and overview before the screenshots */
+@media screen and (max-width: 991px) {
+  #w-node-b4d94642-04da-eb3d-91fd-30952d4d20a5-864f8b99 { order: 0; }
+}
+
+/* Project cards: a soft shade behind the title so it reads on light screenshots */
+.project-cards .project-content {
+  background: linear-gradient(rgba(20, 30, 60, .55), rgba(20, 30, 60, 0) 7rem);
+}
+
+@media screen and (max-width: 991px) {
+  .project-cards .project-name { font-size: 1.25rem; }
+  .project-cards .project-thumbnail { width: 6rem; height: 6rem; }
+}
+
+/* Home: the hidden links appear when a keyboard user tabs to them */
+nav.visually-hidden:focus-within {
+  position: fixed !important;
+  top: 1rem;
+  left: 1rem;
+  z-index: 10000;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: .75rem 1rem;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+  background: #A6D5E9;
+  border-radius: .5rem;
+}
+
+nav.visually-hidden:focus-within ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav.visually-hidden:focus-within a {
+  color: var(--text-strong);
+}
+
+/* Skills: extra cards in a column centre like the first two */
+.work-process-inner-grid > .work-process-content {
+  place-self: center;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .work-process-title { font-size: 2.75rem; }
+}
+
+/* Certifications line up under the centred heading */
+#certifications .tag-list {
+  justify-content: center;
+}
+
+/* Awards on phones: keep a gap between the title and the result */
+@media screen and (max-width: 479px) {
+  .award-title-item { min-width: 0; }
+  .award-year-item { flex: 0 0 auto; padding-left: 1rem; text-align: right; }
+}
+
+/* Logo keeps its shape on small screens */
+img.logo {
+  object-fit: contain;
+  object-position: left center;
+}
+
+/* Contact page and footer: let rows wrap instead of running off narrow screens (also on the old site) */
+.social-media-wrapper,
+.footer-content-block {
+  flex-wrap: wrap;
+}
+
+/* Contact page: the big "Connect with Me!" heading scales with the screen so it never pushes the page sideways */
+.contact-title-item .heading-style-h2 { font-size: min(12rem, 14vw); }
+
+@media screen and (max-width: 991px) {
+  .contact-title-item .heading-style-h2 { font-size: min(7rem, 14vw); }
+}
+
+@media screen and (max-width: 767px) {
+  .contact-title-item .heading-style-h2 { font-size: min(5rem, 11.5vw); }
+}
+
+@media screen and (max-width: 479px) {
+  .contact-title-item .heading-style-h2 { font-size: min(3rem, 11.5vw); }
+}
+
+/* Long tags (e.g. certifications) wrap on narrow phones */
+@media screen and (max-width: 479px) {
+  .tag { white-space: normal; }
+}
+
+/* Small laptops (992-1199px): smaller logo so it doesn't overlap the Projects link (also on the old site) */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  img.logo { height: 1.125rem; margin-left: auto; margin-right: auto; }
+}
+
+/* ---------- Round 2 ---------- */
+
+/* "Open to a 12-16 month internship" line on About and Contact */
+.availability-note {
+  display: table;
+  margin: 1.5rem auto 0;
+  padding: .6rem 1.1rem;
+  border: 1px solid var(--text-strong);
+  border-radius: 999px;
+  color: var(--text-strong);
+  text-transform: uppercase;
+  font-family: Aspekta, Arial, sans-serif;
+  font-size: .875rem;
+  line-height: 1.3;
+  text-align: center;
+}
+
+/* Home: small visible link row above the 3D island (the island only links About and Projects).
+   index.html doesn't load style.css, so the font is declared here too. */
+@font-face {
+  font-family: Aspekta;
+  src: url("https://cdn.prod.website-files.com/6874eefa60b95d11864f8b9a/68868b8025b283ac0620c8ff_Aspekta%20copy.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.home-links {
+  position: fixed;
+  top: 1rem;
+  left: .75rem;
+  right: .75rem;
+  z-index: 10000;
+}
+
+.home-links ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.home-links a {
+  display: block;
+  padding: .55rem 1rem;
+  border: 1px solid #3c64bd;
+  border-radius: 999px;
+  background: rgba(166, 213, 233, .9);
+  color: #24418a;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Aspekta, Arial, sans-serif;
+  font-size: .8125rem;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.home-links a:hover {
+  background: #3c64bd;
+  color: #fff;
+}
+
+.home-links a:focus-visible {
+  outline: 2px solid #24418a;
+  outline-offset: 3px;
+}
+
+@media screen and (max-width: 479px) {
+  .home-links { top: .75rem; }
+  .home-links ul { gap: .375rem; }
+  .home-links a { padding: .5rem .7rem; font-size: .6875rem; }
+}
+
+@media screen and (max-width: 359px) {
+  .home-links ul { gap: .3rem; }
+  .home-links a { padding: .45rem .55rem; font-size: .625rem; }
+}
+
+/* Review fixes, round 2 */
+/* Card thumbnails sit lower so two-line titles don't run into them */
+.project-cards .project-thumbnail-wrap {
+  align-items: flex-end;
+  padding-bottom: 1.25rem;
+}
+
+@media screen and (max-width: 479px) {
+  .project-cards .project-thumbnail-wrap { padding-bottom: 1.5rem; }
+}
+
+/* Home link row: only the pills take clicks, so the 3D scene stays draggable around them */
+.home-links,
+.home-links ul {
+  pointer-events: none;
+}
+
+.home-links a {
+  pointer-events: auto;
+}
+
+/* Home link row: bigger tap targets on phones */
+@media screen and (max-width: 479px) {
+  .home-links a { padding: .65rem .75rem; }
+}
+
+@media screen and (max-width: 359px) {
+  .home-links a { padding: .65rem .45rem; font-size: .6875rem; }
+  .home-links a:focus-visible { outline-offset: 1px; }
+}
+
+.project-image-wrap picture {
+  display: block;
+}
